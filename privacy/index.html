@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Slacken — Privacy Policy</title>
+<meta name="description" content="Privacy policy for Slacken, an iOS puzzle game. No accounts, no analytics SDK, no servers.">
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #fbfbfd;
+    --panel: #ffffff;
+    --ink: #1d1d20;
+    --muted: #5d5d66;
+    --rule: #e3e3ea;
+    --accent: #2f5fd0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #131317;
+      --panel: #1b1b21;
+      --ink: #ececef;
+      --muted: #a2a2ad;
+      --rule: #2e2e37;
+      --accent: #8aa9f2;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 0 20px 80px;
+    background: var(--bg);
+    color: var(--ink);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Helvetica, Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; }
+  header {
+    padding: 56px 0 28px;
+    border-bottom: 1px solid var(--rule);
+    margin-bottom: 36px;
+  }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin: 0 0 10px; letter-spacing: -0.02em; }
+  .effective { color: var(--muted); font-size: 0.94rem; margin: 0; }
+  h2 {
+    font-size: 1.22rem;
+    margin: 40px 0 12px;
+    padding-top: 22px;
+    border-top: 1px solid var(--rule);
+    letter-spacing: -0.01em;
+  }
+  h3 { font-size: 1.02rem; margin: 26px 0 8px; }
+  p, li { color: var(--ink); }
+  ul { padding-left: 22px; }
+  li { margin: 7px 0; }
+  a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
+  a:hover { text-decoration-thickness: 2px; }
+  code {
+    background: var(--panel);
+    border: 1px solid var(--rule);
+    border-radius: 5px;
+    padding: 1px 5px;
+    font-size: 0.88em;
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  }
+  .lede {
+    background: var(--panel);
+    border: 1px solid var(--rule);
+    border-radius: 12px;
+    padding: 18px 20px;
+    margin: 0 0 8px;
+  }
+  footer {
+    margin-top: 56px;
+    padding-top: 22px;
+    border-top: 1px solid var(--rule);
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+  footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>Slacken — Privacy Policy</h1>
+  <p class="effective"><strong>Effective date:</strong> 30 July 2026</p>
+</header>
+
+<p class="lede">
+  Slacken (“we”, “us”, “the app”) is an iOS puzzle game published by
+  Jinyang Wang. This policy explains what data the app collects, why, and
+  who it is shared with. It is intentionally short because Slacken is
+  intentionally minimal: there is no account system, no analytics SDK, no
+  crash-reporting SDK, and no social or networking features.
+</p>
+
+<h2>Data we collect ourselves</h2>
+<p>
+  None. Slacken does not operate any servers that store personal data. Your
+  progress (current level, hint balance, completed-level set, preferences) is
+  persisted only on your device via Apple's standard <code>UserDefaults</code>
+  storage and is removed when you uninstall the app.
+</p>
+
+<h2>Data collected by third-party services</h2>
+<p>
+  Slacken integrates three Apple-platform or Apple-mediated services and one
+  third-party advertising SDK. Each is listed below with what it collects and
+  why.
+</p>
+
+<h3>Google AdMob (advertising)</h3>
+<p>
+  We use Google's AdMob SDK to show <strong>interstitial</strong> and
+  <strong>opt-in rewarded</strong> ads. AdMob may collect:
+</p>
+<ul>
+  <li>
+    <strong>Advertising identifier (IDFA)</strong> — only if you grant tracking
+    permission via Apple's App Tracking Transparency prompt. If you decline,
+    AdMob serves contextual (non-personalised) ads and does not use the IDFA.
+  </li>
+  <li>
+    <strong>Device and ad-interaction telemetry</strong> — coarse device model,
+    OS version, and ad-impression / click events used by Google to bill
+    advertisers and prevent fraud.
+  </li>
+</ul>
+<p>
+  For full details see
+  <a href="https://policies.google.com/privacy">Google's privacy policy</a>
+  and the
+  <a href="https://support.google.com/admob/answer/6128543">AdMob data-disclosure notice</a>.
+</p>
+<p>
+  You can revoke tracking permission at any time in
+  <strong>Settings → Privacy &amp; Security → Tracking</strong> on your device.
+</p>
+
+<h3>Apple StoreKit (in-app purchases and subscriptions)</h3>
+<p>
+  When you buy a hint pack or start an ad-free subscription, Apple processes
+  the transaction. We receive a signed receipt indicating <strong>which product
+  was bought</strong> and <strong>whether the subscription is still
+  active</strong>. We do not receive your name, email address, billing address,
+  or payment instrument. Apple's handling of this data is governed by
+  <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>.
+</p>
+
+<h3>Apple App Tracking Transparency</h3>
+<p>
+  Required by iOS before any third-party SDK may access the IDFA. Apple
+  controls the prompt and your answer; we only receive the result (authorised /
+  denied / restricted / not determined).
+</p>
+
+<h3>Apple App Store Connect (crash reports)</h3>
+<p>
+  If you opt in to share analytics with app developers
+  (<strong>Settings → Privacy &amp; Security → Analytics &amp; Improvements →
+  Share With App Developers</strong>), Apple may share aggregated crash logs
+  with us through App Store Connect. These logs contain no personal data; they
+  help us fix bugs that affect real devices. You can opt out at any time in the
+  same Settings screen.
+</p>
+
+<h2>What we do <em>not</em> collect</h2>
+<ul>
+  <li>No account creation, login, or email capture.</li>
+  <li>No analytics SDK (no Firebase, Amplitude, Mixpanel, etc.).</li>
+  <li>No third-party crash-reporting SDK (no Sentry, Crashlytics, etc.).</li>
+  <li>No location, contacts, photos, microphone, or camera access.</li>
+  <li>No social-network integrations.</li>
+</ul>
+
+<h2>Children</h2>
+<p>
+  Slacken is rated 4+ but is not directed at children under 13 and is not
+  enrolled in the Apple Kids Category. We do not knowingly collect personal
+  data from children. If you believe a child has provided personal data through
+  one of the third-party services above, contact us and we will work with that
+  provider to address it.
+</p>
+
+<h2>Your rights</h2>
+<p>
+  Because we do not store personal data on our own servers, the standard GDPR /
+  CCPA rights to access, correct, export, or delete data are satisfied locally:
+</p>
+<ul>
+  <li>
+    <strong>Access / export:</strong> all data the app holds about you lives in
+    your device's <code>UserDefaults</code> and Apple-mediated subscription
+    history. iOS Settings shows your subscription status; the app shows your
+    level/hint state in the Settings and HUD screens.
+  </li>
+  <li>
+    <strong>Delete:</strong> uninstalling Slacken removes all locally-stored
+    data. Subscription receipts are retained by Apple under its own privacy
+    policy.
+  </li>
+</ul>
+<p>
+  For data held by Google AdMob, see
+  <a href="https://support.google.com/policies/contact/general_privacy_form">Google's privacy request form</a>.
+</p>
+
+<h2>Changes to this policy</h2>
+<p>
+  We will update the effective date at the top of this page whenever the policy
+  changes. Material changes will additionally be flagged in the App Store
+  “What's New” copy for the release in which they take effect.
+</p>
+
+<h2>Contact</h2>
+<p>
+  Privacy questions and requests:
+  <a href="mailto:jinyang.wang27@outlook.com">jinyang.wang27@outlook.com</a>.
+</p>
+
+<footer>
+  <a href="../">Slacken</a> · Privacy Policy · Last updated 30 July 2026
+</footer>
+
+</div>
+</body>
+</html>
